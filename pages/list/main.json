@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-toast": "../../static/vant/toast/index",
+    "van-loading": "../../static/vant/loading/index",
+    "van-panel": "../../static/vant/panel/index"
+  }
+}

@@ -1,0 +1,19 @@
+<template name="3d7e4492">
+  <view class="_div data-v-6a4f6463">
+    <view class="_div data-v-6a4f6463 container">
+      <view class="_div data-v-6a4f6463 item">
+        <view class="_view data-v-6a4f6463 label"><label style="color: #f00" class="_span data-v-6a4f6463">*</label> 输入小区名：</view> <input type="text" value="{{name}}" bindinput="handleProxy" placeholder="请输入小区名" class="_input data-v-6a4f6463 input" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+      </view>
+      <view class="_div data-v-6a4f6463 item">
+        <view class="_view data-v-6a4f6463 label"><label style="color: #f00" class="_span data-v-6a4f6463">*</label> 输入价格：</view> <input type="digit" value="{{min_price}}" bindinput="handleProxy" placeholder="下限/元" class="_input data-v-6a4f6463 input" data-eventid="{{'1'}}" data-comkey="{{$k}}" /> <input type="digit" value="{{max_price}}" bindinput="handleProxy" placeholder="上限/元" class="_input data-v-6a4f6463 input" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+      </view>
+      <view class="_div data-v-6a4f6463 item">
+        <view class="_view data-v-6a4f6463 label"><label style="color: #f00" class="_span data-v-6a4f6463">*</label> 输入年代：</view> <input type="number" value="{{time}}" bindinput="handleProxy" placeholder="请输入年代" class="_input data-v-6a4f6463 input" data-eventid="{{'3'}}" data-comkey="{{$k}}" />
+      </view>
+      <view class="_div data-v-6a4f6463 item">
+        <view class="_view data-v-6a4f6463 label"><label style="color: #f00" class="_span data-v-6a4f6463">*</label> 输入地址：</view> <input type="text" value="{{address}}" bindinput="handleProxy" placeholder="请输入地址" class="_input data-v-6a4f6463 input" data-eventid="{{'4'}}" data-comkey="{{$k}}" />
+      </view> <button bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_button data-v-6a4f6463">保存</button>
+    </view>
+    <van-notify id="van-notify" class="_van-notify data-v-6a4f6463"></van-notify>
+  </view>
+</template>

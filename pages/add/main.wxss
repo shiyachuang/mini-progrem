@@ -1,0 +1,25 @@
+
+.container.data-v-6a4f6463 {
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  padding-top: 30rpx;
+}
+.item.data-v-6a4f6463 {
+  display: flex;
+  align-items: center;
+  height: 76rpx;
+  margin-bottom: 30rpx;
+}
+.item .label.data-v-6a4f6463 {
+  width: 240rpx;
+  font-size: 32rpx;
+}
+.item .input.data-v-6a4f6463 {
+  flex: 1;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+._button.data-v-6a4f6463 {
+  background: #22b37c;
+  color: #fff;
+}

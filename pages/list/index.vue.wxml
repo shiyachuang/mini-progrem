@@ -1,0 +1,9 @@
+<template name="7d25b4e4">
+  <view class="_div data-v-51328d32 container">
+    <view wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_ul data-v-51328d32">
+      <view class="_li data-v-51328d32"><label class="_span data-v-51328d32">小区名称：{{item.name}}</label> <label class="_span data-v-51328d32">市场均价：{{item.min_price}} - {{item.max_price}} / 元</label> <label class="_span data-v-51328d32">建造时间：{{item.time}} 年</label> <label class="_span data-v-51328d32">小区位置：{{item.address}}</label></view>
+    </view>
+    <view wx:if="{{list.length == 0}}" class="_div data-v-51328d32 nodata">没有更多了~ </view>
+    <view class="_div data-v-51328d32 nodata">❤ 需要更多信息、贷款咨询可以联系我们哦~</view> <button bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-51328d32">联系我们</button>
+  </view>
+</template>

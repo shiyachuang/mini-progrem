@@ -1,0 +1,19 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/main",
+    "pages/add/main",
+    "pages/list/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#22b37c",
+    "navigationBarTitleText": "房估助手",
+    "navigationBarTextStyle": "#fff"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

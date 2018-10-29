@@ -1,0 +1,24 @@
+<template name="60c89ab0">
+  <view class="_div data-v-8f1724d8">
+    <view class="_div data-v-8f1724d8 container">
+      <van-notice-bar wx:if="{{permit.notice_bar}}" mode="closeable" background="#22b37c" color="#22b37c" text="这个小程序只是第一个雏形，欢迎向我提更多的需求，致力于帮你们做好这件事。" class="_van-notice-bar data-v-8f1724d8"></van-notice-bar>
+      <image class="_img data-v-8f1724d8 shi" src="https://7465-test-ad5164-1257858866.tcb.qcloud.la/img/shi.png?sign=73ef7ae9524d21008d684c3fdbc5c7b3&t=1540791397" alt></image>
+      <view class="_div data-v-8f1724d8 content"><input type="text" value="{{value}}" bindinput="handleProxy" placeholder="请输入小区名称" placeholder-style="color: #22b37c;" class="_input data-v-8f1724d8 input" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        <view class="_view data-v-8f1724d8 button" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">搜一搜</view>
+      </view>
+    </view>
+    <view class="_div data-v-8f1724d8 history">
+      <view class="_p data-v-8f1724d8"><label class="_span data-v-8f1724d8">历史搜索</label> <label style="color: #22b37c" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_span data-v-8f1724d8">清除搜索</label></view>
+      <view style="margin-top: 10px;" class="_div data-v-8f1724d8"><label class="_span data-v-8f1724d8 his_item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'3-'+index}}" data-comkey="{{$k}}" wx:for="{{historyList}}" wx:for-index="index" wx:for-item="item">
+          {{item}}
+        </label></view>
+    </view>
+    <image wx:if="{{permit.add_enabled}}" bindtap="handleProxy" class="_img data-v-8f1724d8 jia" src="https://7465-test-ad5164-1257858866.tcb.qcloud.la/img/jia.png?sign=fb30e796a732e90aa83f935b9133a330&t=1540791495" alt data-eventid="{{'4'}}" data-comkey="{{$k}}"></image>
+    <view class="_div data-v-8f1724d8 show" wx:if="{{show}}">
+      <view class="_div data-v-8f1724d8 item">
+        <view class="_view data-v-8f1724d8 label"><label style="color: #f00" class="_span data-v-8f1724d8">*</label> 输入密码：</view> <input type="text" value="{{paw}}" bindinput="handleProxy" placeholder="请输入密码" class="_input data-v-8f1724d8 input" data-eventid="{{'5'}}" data-comkey="{{$k}}" />
+      </view> <button class="_button data-v-8f1724d8 button2" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">保存</button>
+    </view>
+    <van-notify id="van-notify" class="_van-notify data-v-8f1724d8"></van-notify>
+  </view>
+</template>
